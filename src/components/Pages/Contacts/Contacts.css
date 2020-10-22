@@ -1,0 +1,79 @@
+/****** Contacts ******/
+
+.contacts-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-desc__phone {
+    display: inline-block;
+    font-size: 60px;
+    margin-bottom: 42px;
+    color: #004FEC;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+}
+
+.contacts-desc__phone:hover {
+    border-color: #004FEC;
+}
+
+.contacts-desc__name {
+    position: relative;
+    width: 180px;
+    padding-left: 23px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contacts-desc__name:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 53px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 26.5px);
+    background-color: #004FEC;
+}
+
+.contacts-desc__mail {
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    color: #333D51;
+    margin-bottom: 38px;
+}
+
+.contacts-desc__mail:hover {
+    border-color: rgb(51, 61, 81, 0.51);
+}
+
+.contacts-desc__title {
+    font-weight: 400;
+    color: rgba(51, 61, 81, 0.5);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contacts-desc-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts-desc-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.contacts-desc-list__text {
+    font-size: 20px;
+    position: relative;
+}
+
+.contacts-desc-list__item:hover .contacts-desc-list__text {
+    transition: all .5s ease;
+    color: #004FEC;
+}
